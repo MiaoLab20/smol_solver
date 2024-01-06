@@ -9,8 +9,10 @@
 cd example
 ./run.sh
 
-* Command: smol_solver pmf.dat $xmin $xmax $bc $dx $dt $nsteps
-pmf.dat: 1D potential of mean force (PMF) data file
+# Parameter settings: 
+smol_solver pmf.dat $xmin $xmax $bc $dx $dt $nsteps
+
+pmf.dat: 1D potential of mean force (PMF) data file 
 $xmin $xmax: the range of reaction coordinate that covers an energy barrier crossing event (e.g., ligand binding or unbinding)
 $bc: flag for setting boundary conditions of Smoluchowski equation solver: 1: both absorbing; 2: both reflective; 3: left reflective/right absorbing; 4: left absorbing/right reflective
 $dx: bin size of the PMF profile
